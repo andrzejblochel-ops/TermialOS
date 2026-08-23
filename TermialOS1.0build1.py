@@ -27,8 +27,8 @@ while True:
         #Shutdown the system.
     elif termial_os=="shutdown":
         print("Turning off Termial OS...")
-        quit()
         time.sleep(0.5)
+        quit()
         #Help message
     elif termial_os=="help":
         print("help:Types this message")
