@@ -11,19 +11,19 @@ splashes=[
     "sudo rm -rf /!",
     "System32!",
     "Sudo? we don't do that here!",
-    "Made with 16 braincells!",
+    "Made with 64 braincells!",
     "Has its own kernel!",
     "Certified to run!™",
     "Powered by Python and some random stuff!"
 ]
 print("    T E R M I A L  O S  1 . 0  BUILD 1    ")
-print(f"    {random.choice(splashes)}    ")
+print("\033[1;93m" + random.choice(splashes) + "\033[0m")
 while True:
     termial_os=input(f"Termial:|System64|{user}>")
     #Just the restart
     if termial_os=="restart":
         print("    T E R M I A L  O S  BUILD 1    ")
-        print(f"    {random.choice(splashes)}     ")
+        print("\033[1;93m" + random.choice(splashes) + "\033[0m")
         #Shutdown the system.
     elif termial_os=="shutdown":
         print("Turning off Termial OS...")
