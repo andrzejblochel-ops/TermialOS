@@ -17,13 +17,13 @@ splashes=[
     "Powered by Python and some random stuff!"
 ]
 print("    T E R M I A L  O S  1 . 0  BUILD 1    ")
-print("\033[1;93m" + random.choice(splashes) + "\033[0m")
+print(f"    {random.choice(splashes)}    ")
 while True:
     termial_os=input(f"Termial:|System64|{user}>")
     #Just the restart
     if termial_os=="restart":
         print("    T E R M I A L  O S  BUILD 1    ")
-        print("\033[1;93m" + random.choice(splashes) + "\033[0m")
+        print(f"    {random.choice(splashes)}    )
         #Shutdown the system.
     elif termial_os=="shutdown":
         print("Turning off Termial OS...")
@@ -35,6 +35,7 @@ while True:
         print("shutdown:Turns off the OS")
         print("restart:Restarts the OS")
         print("calc:Opens up the calculator")
+        print("dice:Just a dice")
         #Calculator
     elif termial_os=="calc":
         print("Calculator 1.0")
