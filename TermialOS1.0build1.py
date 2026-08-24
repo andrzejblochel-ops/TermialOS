@@ -1,5 +1,6 @@
 import time
 import random
+import turtle
 import math
 user=input("Input a username: ")
 time.sleep(0.5)
@@ -16,6 +17,8 @@ splashes=[
     "Certified to run!™",
     "Powered by Python and some random stuff!"
 ]
+b=200
+t=turtle.Turtle
 print("    T E R M I A L  O S  1 . 0  BUILD 1    ")
 print(f"    {random.choice(splashes)}    ")
 while True:
@@ -23,7 +26,7 @@ while True:
     #Just the restart
     if termial_os=="restart":
         print("    T E R M I A L  O S  BUILD 1    ")
-        print(f"    {random.choice(splashes)}    )
+        print(f"    {random.choice(splashes)}    ")
         #Shutdown the system.
     elif termial_os=="shutdown":
         print("Turning off Termial OS...")
@@ -36,6 +39,7 @@ while True:
         print("restart:Restarts the OS")
         print("calc:Opens up the calculator")
         print("dice:Just a dice")
+        print("test:Test message")
         #Calculator
     elif termial_os=="calc":
         print("Calculator 1.0")
@@ -64,6 +68,8 @@ while True:
     elif termial_os=="dice":
         print("Litterally just a dice.")
         print(f"Dice:{random.randint(1,6)}")
+    elif termial_os=="test":
+        print("This might stay as a test feature and will not be included in the release 1.0.")
 
 #There's no fucking nucking ducking way someone's gonna wait for 3.17 years for this fucking message XD
 time.sleep(inf)
